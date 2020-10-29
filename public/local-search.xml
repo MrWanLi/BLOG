@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<search>
+  
+  
+  
+  <entry>
+    <title>fluid 配置</title>
+    <link href="/2020/10/23/fluidconfig/"/>
+    <url>/2020/10/23/fluidconfig/</url>
+    
+    <content type="html"><![CDATA[<h4 id="Wallpaper-Hub"><a href="#Wallpaper-Hub" class="headerlink" title="Wallpaper Hub"></a>Wallpaper Hub</h4><p><img src="/img/fluid/WallpaperHub.png" alt="Wallpaper Hub"><br><a href="https://wallpaperhub.app/">点击跳转到 Wallpaper Hub</a></p><hr><h4 id="Wallhaven"><a href="#Wallhaven" class="headerlink" title="Wallhaven"></a>Wallhaven</h4><p><img src="/img/fluid/Wallhaven.png" alt="Wallhaven"><br><a href="https://wallhaven.cc/">点击跳转到 Wallhaven</a></p><hr><h4 id="Unsplash"><a href="#Unsplash" class="headerlink" title="Unsplash"></a>Unsplash</h4><p><img src="/img/fluid/Unsplash.png" alt="Unsplash"><br><a href="https://unsplash.com/">点击跳转到 Unsplash</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>programme</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>fluid</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>windows启动命令</title>
+    <link href="/2020/10/22/windows/"/>
+    <url>/2020/10/22/windows/</url>
+    
+    <content type="html"><![CDATA[<h3 id="windows杀进程"><a href="#windows杀进程" class="headerlink" title="windows杀进程"></a>windows杀进程</h3><p>  netstat -ano  查看所有端口使用情况<br>  netstat -ano |findstr “端口号”  查看指定端口使用情况<br>  taskkill |findstr “进程ID”      查看进程ID<br>  taskkill  /f  /t /im “进程ID”</p><h3 id="activemq启动"><a href="#activemq启动" class="headerlink" title="activemq启动"></a>activemq启动</h3><p>  cmd 进入activemq安装路径<br>  activemq start 启动<br>  <a href="http://127.0.0.1:8161/">http://127.0.0.1:8161/</a> 查看是否启动</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>programme</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>windows</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>JVM入门class文件格式</title>
+    <link href="/2020/10/22/JVM1/"/>
+    <url>/2020/10/22/JVM1/</url>
+    
+    <content type="html"><![CDATA[<h3 id="jvm"><a href="#jvm" class="headerlink" title="jvm"></a>jvm</h3><hr><h4 id="JVM-即时编译"><a href="#JVM-即时编译" class="headerlink" title="JVM 即时编译"></a>JVM 即时编译</h4><p><img src="/img/jvm/JAVA%E7%BC%96%E7%A0%81%E6%89%A7%E8%A1%8C.jpg" alt="JVM 即时编译"></p><hr><h4 id="JVM-实现"><a href="#JVM-实现" class="headerlink" title="JVM 实现"></a>JVM 实现</h4><p><img src="/img/jvm/JVM%E5%AE%9E%E7%8E%B0.jpg" alt="JVM 实现"><br><a href="https://www.oracle.com/technetwork/cn/java/javase/tech/index-jsp-136373-zhs.html">Hotspot</a><br><a href="https://www.oracle.com/middleware/technologies/jrockit/jrockit-mission-control.html">jrockit</a><br><a href="https://www.ibm.com/support/knowledgecenter/en/SSYKE2_7.0.0/com.ibm.java.lnx.70.doc/user/java_jvm.html">J9</a><br><a href="http://jvm.taobao.org/">TaobaoVM</a><br><a href="https://docs.oracle.com/cd/E11035_01/wloc10/lvm/index.html">LiquidVM</a><br><a href="https://www.azul.com/">Azul VM </a></p><hr><h4 id="JVM-跨平台"><a href="#JVM-跨平台" class="headerlink" title="JVM 跨平台"></a>JVM 跨平台</h4><p><img src="/img/jvm/JVM.jpg" alt="JVM 跨平台 "></p><hr><h4 id="JVM-JRE-JDK"><a href="#JVM-JRE-JDK" class="headerlink" title="JVM JRE JDK"></a>JVM JRE JDK</h4><p><img src="/img/jvm/JDKJREJVM.jpg" alt="JVM JRE JDK"></p><hr><h4 id="JAVA语言和虚拟机规范"><a href="#JAVA语言和虚拟机规范" class="headerlink" title="JAVA语言和虚拟机规范"></a>JAVA语言和虚拟机规范</h4><p><a href="https://docs.oracle.com/javase/specs/index.html">JAVA语言和虚拟机规范 PDF</a></p><hr><h3 id="class"><a href="#class" class="headerlink" title="class"></a>class</h3><h4 id="class文件结构"><a href="#class文件结构" class="headerlink" title="class文件结构"></a>class文件结构</h4><p><img src="/img/jvm/class%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84.jpg" alt="class文件结构"></p><hr><h4 id="classFileFormat"><a href="#classFileFormat" class="headerlink" title="classFileFormat"></a>classFileFormat</h4><p>二进制字节流<br>数据类型：u1,u2,u4,u8 和_info(类型)</p><ul><li>info 来源hotspot源码中的写法<br>查看16进制格式classFile</li><li>sublime </li><li>notepad++</li><li>IDEA插件 BinEd<br>观察ByteCode方法</li><li>javap</li><li>IDEA插件 JBE</li><li>IDEA插件 JClasslib<br>classfile构成<br>ClassFile {<br>  u4 magic;<br>  u2 minor_version;<br>  u2 magor_version;<br>  u2 constant_pool_count;<br>  u2 cp_info constant_pool[constant_pool_count - 1];<br>  u2<br>}</li></ul><hr><h4 id="class怎么读"><a href="#class怎么读" class="headerlink" title="class怎么读"></a>class怎么读</h4><p>16进制读取JDK1.8<br><img src="/img/jvm/16%E8%BF%9B%E5%88%B6%E8%AF%BB%E5%8F%96JDK1.8.jpg" alt="16进制读取JDK1.8"></p><p>java汇编<br><img src="/img/jvm/java%E6%B1%87%E7%BC%96.jpg" alt="java汇编"></p><p>class字典<br><img src="/img/jvm/class%E5%AD%97%E5%85%B8.png" alt="class字典"></p><p><a href="https://docs.oracle.com/javase/specs/jvms/se8/jvms8.pdf">JVM虚拟机规范</a></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>programme</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>JVM</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>JAVA 学习路线</title>
+    <link href="/2020/10/22/JAVA/"/>
+    <url>/2020/10/22/JAVA/</url>
+    
+    <content type="html"><![CDATA[<ul><li><h3 id="技术"><a href="#技术" class="headerlink" title="技术"></a>技术</h3><ul><li><h4 id="JVM"><a href="#JVM" class="headerlink" title="JVM"></a>JVM</h4></li><li><h4 id="多线程"><a href="#多线程" class="headerlink" title="多线程"></a>多线程</h4></li><li><h4 id="设计模式"><a href="#设计模式" class="headerlink" title="设计模式"></a>设计模式</h4></li><li><h4 id="redis"><a href="#redis" class="headerlink" title="redis"></a>redis</h4></li><li><h4 id="zookeeper"><a href="#zookeeper" class="headerlink" title="zookeeper"></a>zookeeper</h4></li><li><h4 id="mysql"><a href="#mysql" class="headerlink" title="mysql"></a>mysql</h4></li><li><h4 id="spring源码"><a href="#spring源码" class="headerlink" title="spring源码"></a>spring源码</h4></li><li><h4 id="netty落地"><a href="#netty落地" class="headerlink" title="netty落地"></a>netty落地</h4></li><li><h4 id="数据结构和算法"><a href="#数据结构和算法" class="headerlink" title="数据结构和算法"></a>数据结构和算法</h4></li><li><h4 id="大数据"><a href="#大数据" class="headerlink" title="大数据"></a>大数据</h4></li><li><h4 id="AI"><a href="#AI" class="headerlink" title="AI"></a>AI</h4></li><li><p>####</p></li></ul></li><li><h3 id="项目"><a href="#项目" class="headerlink" title="项目"></a>项目</h3><ul><li><h4 id="网约车"><a href="#网约车" class="headerlink" title="网约车"></a>网约车</h4></li><li><h4 id="亿级流量"><a href="#亿级流量" class="headerlink" title="亿级流量"></a>亿级流量</h4></li></ul></li></ul>]]></content>
+    
+    
+    <categories>
+      
+      <category>programme</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>work</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>多线程与高并发</title>
+    <link href="/2020/10/21/multithreading/"/>
+    <url>/2020/10/21/multithreading/</url>
+    
+    <content type="html"><![CDATA[]]></content>
+    
+    
+    <categories>
+      
+      <category>programme</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>multithreading</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>面试</title>
+    <link href="/2020/10/21/interview/"/>
+    <url>/2020/10/21/interview/</url>
+    
+    <content type="html"><![CDATA[<h2 id="1-简历润色"><a href="#1-简历润色" class="headerlink" title="1.简历润色"></a>1.简历润色</h2><p>1.1 三个精通往上写（JVM，多线程，设计模式，redis。zookeeper，mysql）<br>1.2 两个项目往上套用（网约车、亿级流量）</p><p>1.3 还有空（spring源码、netty落地【网游】、数据结构和算法、大数据、AI）<br>1.4 贴照片，不学专业，写重点和突出的精通项，角色定位  核心程序员<br>1.5 项目名称、开发环境、软件架构（老套新）、项目描述（业务描述、技术描述、责任描述）【强调作用（个人技术、业务梳理）】<br>1.6 个人博客和源码<br>1.7 个人评价（简洁和技术结合），个人经历（各种比赛，证书，英文OK，和技术和就业有关）<br>1.8 工作经历（时间逆序，单位，岗位）【离职：个人发展，项目砍掉，公司安排其他发展，加班特别严重】</p><p>1.9 项目通用（jvm和mysql调优 ），项目突出（架构改造），业务突出（专业名词），并发突出（网约车【多线程，优化】和秒杀【并发】）<br>1.10 技术架构（软件【linux版本、几核CPU、内存大小】、硬件【服务器多少，缓存层、数据库、业务层分别多少，服务配置】）<br>1.11 责任描述（亮点   qps  tps 日活量 压测 数据库量多大  字段和类和redis设计  架构思考[你来架构你怎么设计]）【8000万注册 3万日活 400qps】   【DDDTDD】<br>1.12 项目心得（改进 难点 闪光点）<br>1.13 项目融合、加班情况</p><hr><h2 id="2-简历投递"><a href="#2-简历投递" class="headerlink" title="2.简历投递"></a>2.简历投递</h2><p>2.1 一份固定简历、好岗位写针对性的简历<br>2.2 九点左右（8-10点）</p><hr><h2 id="3-投递HR沟通"><a href="#3-投递HR沟通" class="headerlink" title="3.投递HR沟通"></a>3.投递HR沟通</h2><p>3.1 提前5-10分钟<br>3.2 自信   眼睛坚定<br>3.3 穿衣整洁、无胡子和指甲、不要胖</p><hr><h2 id="4-面试准备"><a href="#4-面试准备" class="headerlink" title="4.面试准备"></a>4.面试准备</h2><p>4.1 个人博客搭建<br>4.2 每个博客写个人总结</p><hr><h2 id="5-面试技巧"><a href="#5-面试技巧" class="headerlink" title="5.面试技巧"></a>5.面试技巧</h2><p>5.1 会的多讲，不会少讲<br>5.2 说话委婉低调，站在他人角度看问题<br>5.3 你有什么问题问我的？【公司业务线、招人组用到哪些技术栈、了解公司（业务、技术栈、人员规模）】<br>5.4 电话面试【录音】<br>5.5 不要问（加班、补助、到手、年终奖不要聊）<br>5.6 说某一个技术  带出场景  比如排序【1.判断参数、2.写注释、3.有没有更好的解法（多线程）、4.想法】<br>5.7 一致性哈希、布隆过滤器、PAXO、分布式一致性  –》举例、优缺点、画图<br>5.8 说一个算法、把类比算法说出来、两阶段提交、三阶段提交、2pc、3pc、rap、作者怎么想<br>5.9 java各种属性、集合类、并发工具类、1.8、1.9  发生什么 、13等细节<br>5.10 面试官比较擅长的技术<br>5.11 操作系统、网络、sql、算法、数学逻辑、java基础<br>5.12 知识点讲的有趣些、联系点多<br>5.13 操作系统、网络、sql、算法、数学逻辑、java基础</p><hr><h2 id="6-通过HR沟通"><a href="#6-通过HR沟通" class="headerlink" title="6.通过HR沟通"></a>6.通过HR沟通</h2><p>6.1 offer手上有，一个月以上先去短期的上班<br>6.2 多个offer,委婉表达加薪要求（也面了好几家，更偏向您这，但别人给的比较多，您看能不能加点）<br>6.3 入职 离职证明  学历证书（3-6试用期）<br>6.4 裁员 n+1<br>6.5 注意劳动合同工资构成，公积金、养老保险、医疗保险<br>6.6 证据（银行流水 、工资条、转账证明）劳动局举报<br>6.7 谈薪水（不要明确，根据面试效果谈，15.8*16薪水  各种补助 发票 现金 微信支付宝 提供住宿）</p>]]></content>
+    
+    
+    <categories>
+      
+      <category>programme</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>interview</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>markdown语法</title>
+    <link href="/2020/10/09/architecture/"/>
+    <url>/2020/10/09/architecture/</url>
+    
+    <content type="html"><![CDATA[<p>以下是文章内容</p><p>我是谁，我在那，我在干什么!!!</p><p>这里是摘要</p><!-- more --><p>这里是正文</p><style>  /* 设置整个页面的字体 */  html, body, .markdown-body {    font-family: KaiTi,"Microsoft YaHei",Georgia, sans, serif;    font-size: 15px;  }  /* 只设置 markdown 字体 */  .markdown-body {    font-family: KaiTi,"Microsoft YaHei",Georgia, sans, serif;    font-size: 35px;  }</style><div class="markdown-body">正文：开启之日</div><p class="note note-primary">primary</p><p class="note note-secondary">secondary</p><p class="note note-success">success</p><p class="note note-danger">danger</p><p class="note note-warning">warning</p><p class="note note-info">info</p><p class="note note-light">light</p><p class="label label-primary">primary</p><p class="label label-default">default</p><p class="label label-success">success</p><p class="label label-danger">danger</p><p class="label label-warning">warning</p><p class="label label-info">info</p><!-- <div>            <input type="checkbox" disabled >普通示例          </div><div>            <input type="checkbox" disabled checked="checked">默认选中          </div>            <input type="checkbox" disabled >内联示例          <input type="checkbox" disabled ><input type="checkbox" disabled > --><p><a class="btn" href="www.wanlihan.com" title="title">is me</a></p><!-- <div class="group-image-container"><div class="group-image-row"><div class="group-image-wrap"><img src="url"></div><div class="group-image-wrap"><img src="url"></div><div class="group-image-wrap"><img src="url"></div></div><div class="group-image-row"><div class="group-image-wrap"><img src="url"></div><div class="group-image-wrap"><img src="url"></div></div></div> --><h2 id="参考"><a href="#参考" class="headerlink" title="参考"></a>参考</h2><section class="footnotes"><div class="footnote-list"><ol><li><span id="fn:1" class="footnote-text"><span>参考资料1<a href="#fnref:1" rev="footnote" class="footnote-backref"> ↩</a></span></span></li><li><span id="fn:2" class="footnote-text"><span>参考资料2<a href="#fnref:2" rev="footnote" class="footnote-backref"> ↩</a></span></span></li></ol></div></section>]]></content>
+    
+    
+    <categories>
+      
+      <category>md</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>md</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  
+</search>

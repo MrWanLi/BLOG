@@ -4,6 +4,56 @@
   
   
   <entry>
+    <title>model模型传输</title>
+    <link href="/2020/11/09/model/"/>
+    <url>/2020/11/09/model/</url>
+    
+    <content type="html"><![CDATA[<hr><h4 id="数据传输模型"><a href="#数据传输模型" class="headerlink" title="数据传输模型"></a>数据传输模型</h4><p><img src="/img/model/%E6%95%B0%E6%8D%AE%E6%A8%A1%E5%9E%8B.jpg" alt="数据传输模型"></p>]]></content>
+    
+    
+    <categories>
+      
+      <category>programme</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>model</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
+    <title>详解Class加载过程</title>
+    <link href="/2020/11/02/JVM2/"/>
+    <url>/2020/11/02/JVM2/</url>
+    
+    <content type="html"><![CDATA[<h3 id="class"><a href="#class" class="headerlink" title="class"></a>class</h3><hr><h4 id="class加载过程"><a href="#class加载过程" class="headerlink" title="class加载过程"></a>class加载过程</h4><p><img src="/img/jvm/class%E4%BB%8E%E7%A1%AC%E7%9B%98%E5%88%B0%E5%86%85%E5%AD%98.jpg" alt="class从硬盘到内存"></p><blockquote><p>第一步 loading: 将class文件load进内存，一个个二进制的字节格式</p><p>第二步 linking:<br>                1.校验是否符合class文件标准<br>                2.class文件静态变量赋默认值<br>                3.class文件常量池里面的引用变成直接内存地址</p><p>第三步 initializing: class文件静态变量赋初始值</p></blockquote><h4 id="双亲委派机制"><a href="#双亲委派机制" class="headerlink" title="双亲委派机制"></a>双亲委派机制</h4><blockquote><p><img src="/img/jvm/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6.jpg" alt="双亲委派机制"></p></blockquote><blockquote><p>第一: 父加载器不是加载器的价值器，也不是加载器的父类加载器<br>第二: 通过双亲委派安全机制，jvm定义好的类不能被修改<br>第三:<br>        1.Bootstrap ClassLoader加载路径：sun.boot.class.path<br>        2.Extension ClassLoader加载路径：java.ext.dirs<br>        3.App ClassLoader加载路径：java.class.path</p></blockquote>]]></content>
+    
+    
+    <categories>
+      
+      <category>programme</category>
+      
+    </categories>
+    
+    
+    <tags>
+      
+      <tag>JVM</tag>
+      
+    </tags>
+    
+  </entry>
+  
+  
+  
+  <entry>
     <title>fluid 配置</title>
     <link href="/2020/10/23/fluidconfig/"/>
     <url>/2020/10/23/fluidconfig/</url>
@@ -33,7 +83,7 @@
     <link href="/2020/10/22/windows/"/>
     <url>/2020/10/22/windows/</url>
     
-    <content type="html"><![CDATA[<h3 id="windows杀进程"><a href="#windows杀进程" class="headerlink" title="windows杀进程"></a>windows杀进程</h3><p>  netstat -ano  查看所有端口使用情况<br>  netstat -ano |findstr “端口号”  查看指定端口使用情况<br>  taskkill |findstr “进程ID”      查看进程ID<br>  taskkill  /f  /t /im “进程ID”</p><h3 id="activemq启动"><a href="#activemq启动" class="headerlink" title="activemq启动"></a>activemq启动</h3><p>  cmd 进入activemq安装路径<br>  activemq start 启动<br>  <a href="http://127.0.0.1:8161/">http://127.0.0.1:8161/</a> 查看是否启动</p>]]></content>
+    <content type="html"><![CDATA[<h3 id="windows杀进程"><a href="#windows杀进程" class="headerlink" title="windows杀进程"></a>windows杀进程</h3><p>  netstat -ano  查看所有端口使用情况<br>  netstat -ano |findstr “端口号”  查看指定端口使用情况<br>  taskkill |findstr “进程ID”      查看进程ID<br>  taskkill  /f  /t /im “进程ID”</p><h3 id="activemq启动"><a href="#activemq启动" class="headerlink" title="activemq启动"></a>activemq启动</h3><p>  cmd 进入activemq安装路径<br>  activemq start 启动<br>  <a href="http://127.0.0.1:8161/">http://127.0.0.1:8161/</a> 查看是否启动</p><h3 id="rocketmq启动"><a href="#rocketmq启动" class="headerlink" title="rocketmq启动"></a>rocketmq启动</h3><p>  cmd 进入rocketmq安装路径<br>  start mqnamesrv.cmd 启动<br>  start mqbroker.cmd -n 127.0.0.1:9876 autoCreateTopicEnable=true 启动<br>  java -jar rocketmq-console-ng-1.0.0.jar<br>  <a href="http://127.0.0.1:8888/#/">http://127.0.0.1:8888/#/</a> 后台监控页面</p>]]></content>
     
     
     <categories>
@@ -58,7 +108,7 @@
     <link href="/2020/10/22/JVM1/"/>
     <url>/2020/10/22/JVM1/</url>
     
-    <content type="html"><![CDATA[<h3 id="jvm"><a href="#jvm" class="headerlink" title="jvm"></a>jvm</h3><hr><h4 id="JVM-即时编译"><a href="#JVM-即时编译" class="headerlink" title="JVM 即时编译"></a>JVM 即时编译</h4><p><img src="/img/jvm/JAVA%E7%BC%96%E7%A0%81%E6%89%A7%E8%A1%8C.jpg" alt="JVM 即时编译"></p><hr><h4 id="JVM-实现"><a href="#JVM-实现" class="headerlink" title="JVM 实现"></a>JVM 实现</h4><p><img src="/img/jvm/JVM%E5%AE%9E%E7%8E%B0.jpg" alt="JVM 实现"><br><a href="https://www.oracle.com/technetwork/cn/java/javase/tech/index-jsp-136373-zhs.html">Hotspot</a><br><a href="https://www.oracle.com/middleware/technologies/jrockit/jrockit-mission-control.html">jrockit</a><br><a href="https://www.ibm.com/support/knowledgecenter/en/SSYKE2_7.0.0/com.ibm.java.lnx.70.doc/user/java_jvm.html">J9</a><br><a href="http://jvm.taobao.org/">TaobaoVM</a><br><a href="https://docs.oracle.com/cd/E11035_01/wloc10/lvm/index.html">LiquidVM</a><br><a href="https://www.azul.com/">Azul VM </a></p><hr><h4 id="JVM-跨平台"><a href="#JVM-跨平台" class="headerlink" title="JVM 跨平台"></a>JVM 跨平台</h4><p><img src="/img/jvm/JVM.jpg" alt="JVM 跨平台 "></p><hr><h4 id="JVM-JRE-JDK"><a href="#JVM-JRE-JDK" class="headerlink" title="JVM JRE JDK"></a>JVM JRE JDK</h4><p><img src="/img/jvm/JDKJREJVM.jpg" alt="JVM JRE JDK"></p><hr><h4 id="JAVA语言和虚拟机规范"><a href="#JAVA语言和虚拟机规范" class="headerlink" title="JAVA语言和虚拟机规范"></a>JAVA语言和虚拟机规范</h4><p><a href="https://docs.oracle.com/javase/specs/index.html">JAVA语言和虚拟机规范 PDF</a></p><hr><h3 id="class"><a href="#class" class="headerlink" title="class"></a>class</h3><h4 id="class文件结构"><a href="#class文件结构" class="headerlink" title="class文件结构"></a>class文件结构</h4><p><img src="/img/jvm/class%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84.jpg" alt="class文件结构"></p><hr><h4 id="classFileFormat"><a href="#classFileFormat" class="headerlink" title="classFileFormat"></a>classFileFormat</h4><p>二进制字节流<br>数据类型：u1,u2,u4,u8 和_info(类型)</p><ul><li>info 来源hotspot源码中的写法<br>查看16进制格式classFile</li><li>sublime </li><li>notepad++</li><li>IDEA插件 BinEd<br>观察ByteCode方法</li><li>javap</li><li>IDEA插件 JBE</li><li>IDEA插件 JClasslib<br>classfile构成<br>ClassFile {<br>  u4 magic;<br>  u2 minor_version;<br>  u2 magor_version;<br>  u2 constant_pool_count;<br>  u2 cp_info constant_pool[constant_pool_count - 1];<br>  u2<br>}</li></ul><hr><h4 id="class怎么读"><a href="#class怎么读" class="headerlink" title="class怎么读"></a>class怎么读</h4><p>16进制读取JDK1.8<br><img src="/img/jvm/16%E8%BF%9B%E5%88%B6%E8%AF%BB%E5%8F%96JDK1.8.jpg" alt="16进制读取JDK1.8"></p><p>java汇编<br><img src="/img/jvm/java%E6%B1%87%E7%BC%96.jpg" alt="java汇编"></p><p>class字典<br><img src="/img/jvm/class%E5%AD%97%E5%85%B8.png" alt="class字典"></p><p><a href="https://docs.oracle.com/javase/specs/jvms/se8/jvms8.pdf">JVM虚拟机规范</a></p>]]></content>
+    <content type="html"><![CDATA[<h3 id="jvm"><a href="#jvm" class="headerlink" title="jvm"></a>jvm</h3><hr><h4 id="JVM-即时编译"><a href="#JVM-即时编译" class="headerlink" title="JVM 即时编译"></a>JVM 即时编译</h4><p><img src="/img/jvm/JAVA%E7%BC%96%E7%A0%81%E6%89%A7%E8%A1%8C.jpg" alt="JVM 即时编译"></p><hr><h4 id="JVM-实现"><a href="#JVM-实现" class="headerlink" title="JVM 实现"></a>JVM 实现</h4><p><img src="/img/jvm/JVM%E5%AE%9E%E7%8E%B0.jpg" alt="JVM 实现"><br><a href="https://www.oracle.com/technetwork/cn/java/javase/tech/index-jsp-136373-zhs.html">Hotspot</a><br><a href="https://www.oracle.com/middleware/technologies/jrockit/jrockit-mission-control.html">jrockit</a><br><a href="https://www.ibm.com/support/knowledgecenter/en/SSYKE2_7.0.0/com.ibm.java.lnx.70.doc/user/java_jvm.html">J9</a><br><a href="http://jvm.taobao.org/">TaobaoVM</a><br><a href="https://docs.oracle.com/cd/E11035_01/wloc10/lvm/index.html">LiquidVM</a><br><a href="https://www.azul.com/">Azul VM </a></p><hr><h4 id="JVM-跨平台"><a href="#JVM-跨平台" class="headerlink" title="JVM 跨平台"></a>JVM 跨平台</h4><p><img src="/img/jvm/JVM.jpg" alt="JVM 跨平台 "></p><hr><h4 id="JVM-JRE-JDK"><a href="#JVM-JRE-JDK" class="headerlink" title="JVM JRE JDK"></a>JVM JRE JDK</h4><p><img src="/img/jvm/JDKJREJVM.jpg" alt="JVM JRE JDK"></p><hr><h4 id="JAVA语言和虚拟机规范"><a href="#JAVA语言和虚拟机规范" class="headerlink" title="JAVA语言和虚拟机规范"></a>JAVA语言和虚拟机规范</h4><p><a href="https://docs.oracle.com/javase/specs/index.html">JAVA语言和虚拟机规范 PDF</a></p><hr><h3 id="class"><a href="#class" class="headerlink" title="class"></a>class</h3><h4 id="class文件结构"><a href="#class文件结构" class="headerlink" title="class文件结构"></a>class文件结构</h4><p><img src="/img/jvm/class%E6%96%87%E4%BB%B6%E7%BB%93%E6%9E%84.jpg" alt="class文件结构"></p><hr><h4 id="classFileFormat"><a href="#classFileFormat" class="headerlink" title="classFileFormat"></a>classFileFormat</h4><p>二进制字节流<br>数据类型：u1,u2,u4,u8 和_info(类型)</p><ul><li>info 来源hotspot源码中的写法<br>查看16进制格式classFile</li><li>sublime </li><li>notepad++</li><li>IDEA插件 BinEd<br>观察ByteCode方法</li><li>javap</li><li>IDEA插件 JBE</li><li>IDEA插件 JClasslib<br>classfile构成<br>ClassFile {<br>  u4 magic;<br>  u2 minor_version;<br>  u2 magor_version;<br>  u2 constant_pool_count;<br>  u2 cp_info constant_pool[constant_pool_count - 1];<br>  u2<br>}</li></ul><hr><h4 id="class怎么读"><a href="#class怎么读" class="headerlink" title="class怎么读"></a>class怎么读</h4><p>16进制读取JDK1.8<br><img src="/img/jvm/16%E8%BF%9B%E5%88%B6%E8%AF%BB%E5%8F%96JDK1.8.jpg" alt="16进制读取JDK1.8"></p><p>java汇编<br><img src="/img/jvm/java%E6%B1%87%E7%BC%96.jpg" alt="java汇编"></p><p>class字典<br><img src="/img/jvm/class%E5%AD%97%E5%85%B8.png" alt="class字典"></p><p><a href="https://docs.oracle.com/javase/specs/jvms/se8/jvms8.pdf">JVM虚拟机规范</a></p><p>jvm八大原子操作<br>lock(锁定)  unlock(解锁)<br>read(读取)  write(写入)<br>load(载入)  store(存储)<br>use(使用)   assign(赋值)</p>]]></content>
     
     
     <categories>

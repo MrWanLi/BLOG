@@ -19,5 +19,13 @@ excerpt: windows(一)
   activemq start 启动
   http://127.0.0.1:8161/ 查看是否启动
 
+### rocketmq启动 
+  cmd 进入rocketmq安装路径
+  start mqnamesrv.cmd 启动
+  start mqbroker.cmd -n 127.0.0.1:9876 autoCreateTopicEnable=true 启动 
+  java -jar rocketmq-console-ng-1.0.0.jar
+  http://127.0.0.1:8888/#/ 后台监控页面
+
+
 
 

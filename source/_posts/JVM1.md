@@ -78,3 +78,9 @@ class字典
 ![class字典](/img/jvm/class字典.png)
 
 [JVM虚拟机规范](https://docs.oracle.com/javase/specs/jvms/se8/jvms8.pdf)
+
+jvm八大原子操作
+lock(锁定)  unlock(解锁)
+read(读取)  write(写入)
+load(载入)  store(存储)
+use(使用)   assign(赋值)

@@ -17,10 +17,23 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>分类 - programme - Hexo</title>
+  <title>page.title - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
+
+  <link  rel="stylesheet" href="https://cdn.staticfile.org/github-markdown-css/4.0.0/github-markdown.min.css" />
+  <link  rel="stylesheet" href="/lib/hint/hint.min.css" />
+
+  
+    
+    
+      
+      <link  rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/10.0.0/styles/github-gist.min.css" />
+    
+  
+
+  
 
 
 <!-- 主题依赖的图标库，不要自行修改 -->
@@ -166,64 +179,67 @@
               <div class="col-12 col-md-10 m-auto">
                 
 
-<div class="list-group">
-  <p class="h4">共计 8 篇文章</p>
-  <hr>
-  
-    
-      
-      <p class="h5">2020</p>
-    
-    <a href="/2020/11/09/model/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">model模型传输</span>
-      <time style="float: right;">11-09</time>
-    </a>
-  
-    
-    <a href="/2020/11/02/JVM2/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">详解Class加载过程</span>
-      <time style="float: right;">11-02</time>
-    </a>
-  
-    
-    <a href="/2020/10/23/fluidconfig/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">fluid 配置</span>
-      <time style="float: right;">10-23</time>
-    </a>
-  
-    
-    <a href="/2020/10/22/windows/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">windows启动命令</span>
-      <time style="float: right;">10-22</time>
-    </a>
-  
-    
-    <a href="/2020/10/22/JVM1/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">JVM入门class文件格式</span>
-      <time style="float: right;">10-22</time>
-    </a>
-  
-    
-    <a href="/2020/10/22/JAVA/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">JAVA 学习路线</span>
-      <time style="float: right;">10-22</time>
-    </a>
-  
-    
-    <a href="/2020/10/21/multithreading/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">多线程与高并发</span>
-      <time style="float: right;">10-21</time>
-    </a>
-  
-    
-    <a href="/2020/10/21/interview/" class="list-group-item list-group-item-action">
-      <span class="archive-post-title">面试</span>
-      <time style="float: right;">10-21</time>
-    </a>
-  
+<div class="page-content">
+  <ul>
+<li>展示逻辑<ul>
+<li>是心悦会员<ul>
+<li>是周期卡，展示所有等级周期卡</li>
+<li>非周期卡，展示所有等级周期卡</li>
+</ul>
+</li>
+<li>非心悦会员<ul>
+<li>是周期卡，展示所有等级周期卡（注：仅享受优惠券权益）</li>
+<li>非周期卡，展示所有等级周期卡（注：仅享受优惠券权益）</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>下单逻辑</p>
+<ul>
+<li><p>校验会员是否可以购买</p>
+</li>
+<li><p>校验会员是否首次购买和续费</p>
+</li>
+<li><p>校验支付金额</p>
+</li>
+<li><p>创建订单</p>
+</li>
+<li><p>设置返佣</p>
+</li>
+<li><p>设置自动取消时间</p>
+</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li><p>查单逻辑</p>
+<ul>
+<li>展示所有订单信息</li>
+</ul>
+</li>
+<li><p>校验支付逻辑</p>
+<ul>
+<li>查询订单</li>
+<li>校验订单价格</li>
+<li>订单和价格设置缓存</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>支付逻辑<ul>
+<li>支付宝支付</li>
+<li>支付宝续费支付</li>
+<li>微信支付</li>
+</ul>
+</li>
+</ul>
+<ul>
+<li>回调逻辑</li>
+</ul>
+
 </div>
-
-
 
               </div>
             </div>
@@ -318,7 +334,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "分类 - programme&nbsp;",
+        "page.title&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
@@ -332,6 +348,21 @@
   </script>
 
 
+
+  <script  src="https://cdn.staticfile.org/anchor-js/4.2.2/anchor.min.js" ></script>
+  <script>
+    anchors.options = {
+      placement: "right",
+      visible: "hover",
+      
+    };
+    var el = "h1,h2,h3,h4,h5,h6".split(",");
+    var res = [];
+    for (item of el) {
+      res.push(".markdown-body > " + item)
+    }
+    anchors.add(res.join(", "))
+  </script>
 
 
 

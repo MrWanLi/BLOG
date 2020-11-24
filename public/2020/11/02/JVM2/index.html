@@ -17,7 +17,7 @@
   <meta name="description" content="">
   <meta name="author" content="John Doe">
   <meta name="keywords" content="">
-  <title>fluid 配置 - Hexo</title>
+  <title>详解Class加载过程 - Hexo</title>
 
   <link  rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.4.1/css/bootstrap.min.css" />
 
@@ -150,7 +150,7 @@
 </nav>
 
     <div class="banner intro-2" id="background" parallax=true
-         style="background: url('/img/bg/lucian-dachman-v_mTgSs6UiY-unsplash.jpg') no-repeat center center;
+         style="background: url('/img/bg/omid-armin-MDbl7S8yp60-unsplash.jpg') no-repeat center center;
            background-size: cover;">
       <div class="full-bg-img">
         <div class="mask flex-center" style="background-color: rgba(0, 0, 0, 0.3)">
@@ -165,8 +165,8 @@
   
     <span class="post-meta">
       <i class="iconfont icon-date-fill" aria-hidden="true"></i>
-      <time datetime="2020-10-23 17:45" pubdate>
-        2020年10月23日 下午
+      <time datetime="2020-11-02 15:29" pubdate>
+        2020年11月2日 下午
       </time>
     </span>
   
@@ -177,7 +177,7 @@
     
     <span class="post-meta mr-2">
       <i class="iconfont icon-chart"></i>
-      23 字
+      180 字
     </span>
   
 
@@ -187,7 +187,7 @@
       <i class="iconfont icon-clock-fill"></i>
       
       
-      1
+      2
        分钟
     </span>
   
@@ -217,14 +217,22 @@
         <div class="py-5" id="board">
           <article class="post-content mx-auto" id="post">
             <!-- SEO header -->
-            <h1 style="display: none">fluid 配置</h1>
+            <h1 style="display: none">详解Class加载过程</h1>
             
             <div class="markdown-body" id="post-body">
-              <h4 id="Wallpaper-Hub"><a href="#Wallpaper-Hub" class="headerlink" title="Wallpaper Hub"></a>Wallpaper Hub</h4><p><img src="/img/fluid/WallpaperHub.png" srcset="/img/loading.gif" alt="Wallpaper Hub"><br><a target="_blank" rel="noopener" href="https://wallpaperhub.app/">点击跳转到 Wallpaper Hub</a></p>
-<hr>
-<h4 id="Wallhaven"><a href="#Wallhaven" class="headerlink" title="Wallhaven"></a>Wallhaven</h4><p><img src="/img/fluid/Wallhaven.png" srcset="/img/loading.gif" alt="Wallhaven"><br><a target="_blank" rel="noopener" href="https://wallhaven.cc/">点击跳转到 Wallhaven</a></p>
-<hr>
-<h4 id="Unsplash"><a href="#Unsplash" class="headerlink" title="Unsplash"></a>Unsplash</h4><p><img src="/img/fluid/Unsplash.png" srcset="/img/loading.gif" alt="Unsplash"><br><a target="_blank" rel="noopener" href="https://unsplash.com/">点击跳转到 Unsplash</a></p>
+              <h3 id="class"><a href="#class" class="headerlink" title="class"></a>class</h3><hr>
+<h4 id="class加载过程"><a href="#class加载过程" class="headerlink" title="class加载过程"></a>class加载过程</h4><p><img src="/img/jvm/class%E4%BB%8E%E7%A1%AC%E7%9B%98%E5%88%B0%E5%86%85%E5%AD%98.jpg" srcset="/img/loading.gif" alt="class从硬盘到内存"></p>
+<blockquote>
+<p>第一步 loading: 将class文件load进内存，一个个二进制的字节格式</p>
+<p>第二步 linking:<br>                1.校验是否符合class文件标准<br>                2.class文件静态变量赋默认值<br>                3.class文件常量池里面的引用变成直接内存地址</p>
+<p>第三步 initializing: class文件静态变量赋初始值</p>
+</blockquote>
+<h4 id="双亲委派机制"><a href="#双亲委派机制" class="headerlink" title="双亲委派机制"></a>双亲委派机制</h4><blockquote>
+<p><img src="/img/jvm/%E5%8F%8C%E4%BA%B2%E5%A7%94%E6%B4%BE%E6%9C%BA%E5%88%B6.jpg" srcset="/img/loading.gif" alt="双亲委派机制"></p>
+</blockquote>
+<blockquote>
+<p>第一: 父加载器不是加载器的价值器，也不是加载器的父类加载器<br>第二: 通过双亲委派安全机制，jvm定义好的类不能被修改<br>第三:<br>        1.Bootstrap ClassLoader加载路径：sun.boot.class.path<br>        2.Extension ClassLoader加载路径：java.ext.dirs<br>        3.App ClassLoader加载路径：java.class.path</p>
+</blockquote>
 
             </div>
             <hr>
@@ -242,7 +250,7 @@
                   <div class="post-meta">
                     <i class="iconfont icon-tags"></i>
                     
-                      <a class="hover-with-bg" href="/tags/fluid/">fluid</a>
+                      <a class="hover-with-bg" href="/tags/JVM/">JVM</a>
                     
                   </div>
                 
@@ -255,9 +263,9 @@
                   <article class="post-prev col-6">
                     
                     
-                      <a href="/2020/11/02/JVM2/">
+                      <a href="/2020/11/09/model/">
                         <i class="iconfont icon-arrowleft"></i>
-                        <span class="hidden-mobile">详解Class加载过程</span>
+                        <span class="hidden-mobile">model模型传输</span>
                         <span class="visible-mobile">上一篇</span>
                       </a>
                     
@@ -265,8 +273,8 @@
                   <article class="post-next col-6">
                     
                     
-                      <a href="/2020/10/22/windows/">
-                        <span class="hidden-mobile">windows启动命令</span>
+                      <a href="/2020/10/23/fluidconfig/">
+                        <span class="hidden-mobile">fluid 配置</span>
                         <span class="visible-mobile">下一篇</span>
                         <i class="iconfont icon-arrowright"></i>
                       </a>
@@ -409,7 +417,7 @@
     var typed = new Typed('#subtitle', {
       strings: [
         '  ',
-        "fluid 配置&nbsp;",
+        "详解Class加载过程&nbsp;",
       ],
       cursorChar: "_",
       typeSpeed: 70,
